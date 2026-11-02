@@ -141,7 +141,8 @@ nav a:hover{
 
     /* somente os links */
     nav{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
         flex-wrap: wrap;
     }
 
@@ -149,6 +150,7 @@ nav a:hover{
         display: grid;
         grid-template-columns: 1fr ;
         justify-content: center;
+        padding: 4px;
     }
 
     /* config caixa pai */
@@ -187,7 +189,8 @@ nav a:hover{
 
     /* somente os links */
     nav{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
         flex-wrap: wrap;
     }
 
@@ -195,6 +198,7 @@ nav a:hover{
         display: grid;
         grid-template-columns: 1fr ;
         justify-content: center;
+        padding: 4px;
     }
 
     /* config caixa pai */

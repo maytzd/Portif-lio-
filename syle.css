@@ -1,0 +1,224 @@
+/* reset basic */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+/* cores e tamanho do header */
+header{
+    background-color: #120f1a;
+    color: #f3efe9;
+
+    display: flex ;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+/* colocar em coluna */
+nav{
+    display: flex ;
+    gap: 25px;
+    align-items:center;
+    margin-right: 3%;
+}
+
+/* arrumar os links das paginas */
+nav a{
+    color: #f3efe9;
+    text-decoration: none;
+}
+
+/* estilo somente na cor da caixa de contatos do header */
+
+.contat{
+    background-color: red;
+
+    border: none;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
+
+/* transiçao da caixas*/
+
+nav a:hover{
+    color: red;
+}
+
+.contat:hover{
+   color: #f3efe9;
+   background-color: #b81d30	
+
+}
+
+
+/* primeira sessão  medidas e tamanhos de letras*/
+
+.inicio{
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 180px;
+    font-size: 25px;
+
+    background-color: #211a2c;
+    color: #f3efe9;
+}
+
+/* config do espaçamento das letras no titulos e paragrafo principal */
+.inicio h1{
+    line-height: 45px;
+}
+
+.inicio p{
+    line-height: 35px;
+}
+
+/* destaque no nome no iniico  */
+
+.inicio span{
+    color: #d7263d;
+}
+
+/* espaço da caixa pai dos botões*/
+.bts{
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+/* confirações de cor/estilo dos botões de inicio  */
+.bt-1{
+    background-color: #d7263d;
+    color: #f3efe9;
+    border: none;
+    
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.bt-2{
+    background-color: transparent;
+    color: #f3efe9;
+    border: #f3efe9 solid 1px;
+    
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* config de imagem */
+
+.inicio-imagem img{
+    width: 400px;      
+    height: 400px;      
+    object-fit: cover;  /*  não distorcer a foto */
+    border-radius: 50%;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+
+/*media query para tablets para a tela se comportar sobre tablets*/
+@media (max-width: 800px){
+    /* somente o titulo */
+    header{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 10px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    /* somente os links */
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contat{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    /* config caixa pai */
+    .inicio{
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        gap:30px;
+    }
+
+    /* botoes */
+    .bts{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        /*config da imagem  */
+
+    .inicio-imagem img{
+        width: 220px;
+        height: 220px;
+        margin: 18%;
+    }
+}
+
+
+/*media query para se comportar em telas de celular */
+@media (max-width: 500px){
+    /* somente o titulo */
+    header{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 5px;
+        padding: 4px;
+        text-align: center;
+    }
+
+    /* somente os links */
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contat{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    /* config caixa pai */
+    .inicio{
+        flex-direction: column-reverse;
+        padding: 20px 10px;
+        gap:15px;
+    }
+
+    /* botoes */
+    .bts{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        /*config da imagem  */
+
+    .inicio-imagem img{
+        width: 220px;
+        height: 220px;
+        margin: 22%;
+    }
+}
+
+
+
+
+
+

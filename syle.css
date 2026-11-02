@@ -141,13 +141,14 @@ nav a:hover{
 
     /* somente os links */
     nav{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .contat{
         display: grid;
         grid-template-columns: 1fr ;
+        justify-content: center;
     }
 
     /* config caixa pai */
@@ -186,13 +187,14 @@ nav a:hover{
 
     /* somente os links */
     nav{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .contat{
         display: grid;
         grid-template-columns: 1fr ;
+        justify-content: center;
     }
 
     /* config caixa pai */
